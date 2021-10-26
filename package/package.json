@@ -1,0 +1,30 @@
+{
+  "name": "hdyusf-common",
+  "version": "0.1.1",
+  "main": "lib/index.js",
+  "dependencies": {
+    "core-js": "^3.6.5"
+  },
+  "description": "hdyusf common function",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hdyusf/common.git"
+  },
+  "keywords": [
+    "hdyusf",
+    "common",
+    "function"
+  ],
+  "author": "hdyusf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdyusf/common/issues"
+  },
+  "homepage": "https://github.com/hdyusf/common#readme"
+}

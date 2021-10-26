@@ -1,17 +1,17 @@
 {
-  "name": "ceshi",
+  "name": "hdyusf-common",
   "version": "0.1.0",
-  "private": true,
+  "main": "lib/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "core-js": "^3.6.5"
   },
   "devDependencies": {
+    "vue": "^2.6.11",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
@@ -32,7 +32,10 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-empty": "off",
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",
