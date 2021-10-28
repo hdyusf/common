@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "dayjs": "^1.10.7",
     "qs": "^6.10.1"
   },
   "devDependencies": {
