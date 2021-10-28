@@ -13,4 +13,3 @@ import './lib/pxVw';
 import './lib/scroll';
 import './lib/string';
 import './lib/url';
-import './lib/zip';
