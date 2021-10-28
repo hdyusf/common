@@ -1,33 +1,37 @@
 {
   "name": "hdyusf-common",
   "version": "0.1.2",
-  "main": "lib/index.js",
-  "description": "https://hdyusf.github.io/common/",
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "test": "jest"
   },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "axios": "^0.24.0",
+    "dayjs": "^1.10.7",
+    "qs": "^6.10.1"
   },
   "devDependencies": {
-    "vue": "^2.6.11",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.3.1",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.1.1",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "eslint-plugin-jest": "^25.2.2",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "lint-staged": "^11.2.6",
+    "pako": "^2.0.4"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "jest": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "jest",
       "eslint:recommended"
     ],
     "parserOptions": {
@@ -37,6 +41,12 @@
       "no-empty": "off",
       "no-unused-vars": "off"
     }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --config prettier.config.js --write",
+      "eslint --fix"
+    ]
   },
   "browserslist": [
     "> 1%",
