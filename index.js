@@ -1,4 +1,4 @@
-module.exports = {
+let allFuc = {
   ...require('./lib/array'),
   ...require('./lib/cookie'),
   ...require('./lib/country'),
@@ -14,4 +14,13 @@ module.exports = {
   ...require('./lib/scroll'),
   ...require('./lib/string'),
   ...require('./lib/url'),
+}
+let install = function(Vue) {
+  for(let [key, value] of Object.entries(allFuc)) {
+    Vue.prototype[`$${key}`] = value;
+  }
+}
+module.exports = {
+  install,
+  ...allFuc
 };
