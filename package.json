@@ -6,7 +6,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "qs": "^6.10.1",
+    "qs": "^6.10.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
