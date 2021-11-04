@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "qs": "^6.10.1",
+  },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
@@ -18,9 +20,7 @@
     "husky": "^7.0.4",
     "jest": "^27.3.1",
     "lint-staged": "^11.2.6",
-    "pako": "^2.0.4",
-    "axios": "^0.24.0",
-    "qs": "^6.10.1"
+    "pako": "^2.0.4"
   },
   "eslintConfig": {
     "root": true,
